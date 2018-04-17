@@ -17,7 +17,7 @@ public class DatabaseLoader implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... strings) throws Exception {
         this.repository.save(new Product("Coffee mug", "a white ceramic coffee cup", BigDecimal.valueOf(1.99)));
     }
 }
